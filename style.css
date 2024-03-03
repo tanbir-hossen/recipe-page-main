@@ -3,7 +3,7 @@
   --fw-nor: 400;
 
   --primary-clr-one: hsl(14, 45%, 36%);
-  --primary-clr-two: hsl(332, 51%, 32%);
+  --primary-clr-two: hsl(322, 100%, 98%);
   --background-clr: hsl(330, 100%, 98%);
   --text-clr: hsl(24, 5%, 18%);
   --wenge-brown: hsl(30, 10%, 34%);
@@ -19,8 +19,14 @@
 
 body {
   font-family: var(--ff);
-  max-width: 600px;
+  background-color: var(--egg-shell);
+}
+.container {
+  max-width: 800px;
   margin: 5rem auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 1rem;
 }
 .banner > img {
   width: 100%;
@@ -33,12 +39,13 @@ p {
   color: var(--wenge-brown);
 }
 .recipe-pre-sec {
-  background-color: var(--background-clr);
+  background-color: hsl(330, 61%, 93%);
   padding: 2rem;
   border-radius: 0.5rem;
 }
-span {
+.pre-title {
   font-weight: bold;
+  color: var(--primary-clr-one);
 }
 li {
   line-height: 2rem;
@@ -47,11 +54,15 @@ li {
 .section-title {
   color: var(--primary-clr-one);
 }
-table,
-td {
-  width: 100%;
-  border-bottom: 1px solid rgb(185, 30, 30);
-  border-collapse: collapse;
-  padding-left: 2rem;
-  text-align: right;
+.table-row {
+  display: flex;
+  padding-left: 1rem;
+}
+.table-row > * {
+  width: 100px;
+  margin-right: auto;
+}
+.attribution {
+  margin-top: 3rem;
+  text-align: center;
 }
