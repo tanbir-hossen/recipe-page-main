@@ -1,0 +1,44 @@
+:root {
+  --ff: "Young Serif", serif;
+  --fw-nor: 400;
+
+  --primary-clr-one: hsl(14, 45%, 36%);
+  --primary-clr-two: hsl(332, 51%, 32%);
+  --background-clr: hsl(330, 100%, 98%);
+  --text-clr: hsl(24, 5%, 18%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+
+  --spacer: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--ff);
+  max-width: 600px;
+  margin: 5rem auto;
+}
+.banner > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+h1 {
+  color: var(--text-clr);
+}
+p {
+  color: var(--text-clr);
+}
+.recipe-pre-sec {
+  background-color: var(--background-clr);
+  padding: 2rem;
+}
+span {
+  font-weight: bold;
+}
+li {
+  line-height: 2rem;
+}
